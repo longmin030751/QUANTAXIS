@@ -40,3 +40,8 @@ make_dir(download_path, exist_ok=True)
 make_dir(log_path, exist_ok=True)
 make_dir(strategy_path, exist_ok=True)
 make_dir(bin_path, exist_ok=True)
+
+print(setting_path)
+print(cache_path)
+print(log_path)
+print(download_path)
