@@ -366,8 +366,8 @@ class CLI(cmd.Cmd):
             arg = arg.split(" ")
 
             if len(arg) == 1 and arg[0] == "all":
+                print("mongo_uri=: " + QA_Setting().mongo_uri)
                 if (
-                    print("mongo_uri=: " + QA_Setting().mongo_uri)
                     QA_Setting()
                     .client.quantaxis.user_list.find({"username": "root"})
                     .count()
