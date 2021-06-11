@@ -368,12 +368,12 @@ class CLI(cmd.Cmd):
             if len(arg) == 1 and arg[0] == "all":
                 if (
                     QA_Setting()
-                    .client.quantaxis.user_list.find({"username": "admin"})
+                    .client.quantaxis.user_list.find({"username": "root"})
                     .count()
                     == 0
                 ):
                     QA_Setting().client.quantaxis.user_list.insert(
-                        {"username": "admin", "password": "admin"}
+                        {"username": "root", "password": "vvASWUCfgo"}
                     )
                 # TODO: 将ts还是tdx作为命令传入
                 # QA_SU_save_stock_day('ts')
